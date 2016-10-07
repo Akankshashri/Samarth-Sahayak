@@ -1,0 +1,21 @@
+<div flex-xs="100" flex-gt-xs="100">
+    <div layout="row" layout-xs="column" flex>
+        <md-card ng-repeat="prof in $ctrl.profiling" flex-xs="40" flex-gt-xs="30">
+            <md-card-title>
+                <md-card-title-text>
+                    <span class="md-headline">{{prof.name}}</span>
+                    <img ng-src="{{prof.profile}}" />
+                    <md-divider></md-divider>
+                    <span class="md-subhead">{{prof.Admin}}</span>
+                    <span class="md-subhead">{{prof.circleDiscription}}</span>
+                </md-card-title-text>
+            </md-card-title>
+            <md-card-actions layout="row" layout-align="end center">
+                <md-button ui-sref="circleDetail">Action 1</md-button>
+            </md-card-actions>
+        </md-card>
+    </div>
+    <md-button class="md-fab" aria-label="Add circles">
+        <h1>+</h1>
+    </md-button>
+</div>
